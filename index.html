@@ -1,0 +1,39 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="team">
+                <h3>HOME</h3>
+                <div class="score">
+                    <p id="home-score" class="bungee-regular">0</p>
+                </div>
+                <div>
+                    <button class="btn btnn" onclick="homeOnePointer()" >+1</button>
+                     <button class="btn btnn"  onclick="homeTwoPointer()" >+2</button>
+                      <button class="btn btnn" onclick="homeThreePointer()">+3</button>
+                </div>
+            </div>
+            <div class="team">
+                <h3>GUEST</h3>
+                 <div  class="score">
+                     <p id="guest-score" class="bungee-regular">0</p>
+                </div>
+                <div>
+                    <button class="btn btnn" onclick="guestOnePointer()" >+1</button>
+                     <button class="btn btnn" onclick="guestTwoPointer()">+2</button>
+                      <button class="btn btnn" onclick="guestThreePointer()" >+3</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="btn-holder">
+             <button class="reset btnn" onclick="resetScores()">Reset Scores</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
